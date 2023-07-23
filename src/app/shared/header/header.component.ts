@@ -1,8 +1,7 @@
 import { Component } from '@angular/core';
-
 import { MatDialog } from '@angular/material/dialog';
 
-import { EmpAddEditComponent } from 'src/app/employee';
+import { EmpAddEditComponent } from 'src/app/employee/components';
 
 @Component({
   selector: 'app-header',

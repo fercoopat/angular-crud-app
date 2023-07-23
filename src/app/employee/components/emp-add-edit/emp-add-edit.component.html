@@ -8,9 +8,6 @@
       <mat-form-field appearance="outline">
         <mat-label>First Name</mat-label>
         <input matInput formControlName="firstName" placeholder="Ex. Test" />
-        <mat-error *ngIf="isFieldValid('firstName')">{{
-          errorMessage | titlecase
-        }}</mat-error>
       </mat-form-field>
 
       <mat-form-field appearance="outline">
@@ -92,14 +89,21 @@
   </div>
 
   <div mat-dialog-actions class="action">
-    <button mat-raised-button color="warn" type="button">Cancel</button>
+    <button
+      mat-raised-button
+      color="warn"
+      type="button"
+      [mat-dialog-close]="false"
+    >
+      Cancel
+    </button>
     <button
       mat-raised-button
       color="primary"
       [disabled]="myForm.invalid"
       type="submit"
     >
-      Save
+      {{ data ? "Update" : "Save" }}
     </button>
   </div>
 </form>

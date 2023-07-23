@@ -1,10 +1,23 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-const routes: Routes = [];
+import { MainComponent } from './pages';
+
+const routes: Routes = [
+  {
+    path: '',
+    children: [
+      {
+        path: '',
+        component: MainComponent,
+      },
+      { path: '**', redirectTo: '' },
+    ],
+  },
+];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class EmployeeRoutingModule { }
+export class EmployeeRoutingModule {}

@@ -6,9 +6,10 @@ import { MaterialModule } from '../material/material.module';
 import { EmployeeRoutingModule } from './employee-routing.module';
 
 import { EmpAddEditComponent } from './components';
+import { MainComponent } from './pages/main/main.component';
 
 @NgModule({
-  declarations: [EmpAddEditComponent],
+  declarations: [EmpAddEditComponent, MainComponent],
   imports: [
     CommonModule,
     EmployeeRoutingModule,

@@ -1,0 +1,45 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "employees": [
+    {
+      "firstName": "Fer",
+      "lastName": "Coopat",
+      "email": "fercoopat@gmail.com",
+      "birthday": "1995-11-02T05:00:00.000Z",
+      "gender": "male",
+      "education": "Intermediate",
+      "company": "Google",
+      "experience": 4,
+      "package": 12,
+      "id": 1
+    },
+    {
+      "firstName": "Rafael",
+      "lastName": "Perez",
+      "email": "rafaelperez@mail.com",
+      "birthday": "2023-07-23T04:00:00.000Z",
+      "gender": "male",
+      "education": "Master",
+      "company": "OneTwoThree",
+      "experience": 3,
+      "package": 6,
+      "id": 2
+    }
+  ]
+}
